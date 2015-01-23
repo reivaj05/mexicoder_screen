@@ -1,5 +1,5 @@
 from django.contrib import admin
-from screen.models import Country,League,Team,Player,Coach
+from menu.models import Country,League,Team,Player,Coach
 
 # Register your models here.
 

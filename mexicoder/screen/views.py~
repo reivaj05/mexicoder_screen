@@ -33,5 +33,5 @@ def teamPlayers(request,teamID):
 
 def playerInfo(request,playerID):
 	player=Player.objects.get(pk=playerID)
-	data = serializers.serialize('json', [player])
-	return HttpResponse(data, content_type='application/json')	
+	data = serializers.serialize('json', player)
+	return HttpResponse([data], content_type='application/json')	
